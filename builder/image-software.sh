@@ -127,16 +127,18 @@ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip2.py
 python3 get-pip.py
 python get-pip2.py
 rm get-pip.py get-pip2.py
-my_travis_retry pip install --upgrade pip
-my_travis_retry pip3 install --upgrade pip
+#my_travis_retry pip install --upgrade pip
+#my_travis_retry pip3 install --upgrade pip
 
 
 echo_stamp "TKUIK installing"
-my_travis_retry pip install wheel
-my_travis_retry pip3 install wheel
-my_travis_retry pip install yolov8
-my_travis_retry pip3 install yolov8
-
+#my_travis_retry pip3 install --upgrade setuptools
+#my_travis_retry sudo pip3 install matplotlib==3.4.0
+#my_travis_retry pip3 install wheel
+#my_travis_retry pip3 install yolov8
+#my_travis_retry pip3 install ez_setup
+#my_travis_retry sudo apt-get install python3.8 -y
+#pip3 install ultralytics==8.0.20
 
 echo_stamp "Make sure both pip and pip3 are installed"
 pip --version
