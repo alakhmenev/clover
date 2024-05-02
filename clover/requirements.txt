@@ -2,5 +2,4 @@ flask
 geopy
 smbus2
 VL53L1X
-numpy
-pyzbar
+
