@@ -115,10 +115,7 @@ python-dev \
 python3-dev \
 python-systemd \
 mjpg-streamer \
-python3-opencv \
-numpy \
-pyzbar \
-yolov8
+python3-opencv
 
 # Deny byobu to check available updates
 sed -i "s/updates_available//" /usr/share/byobu/status/status
@@ -131,7 +128,13 @@ python3 get-pip.py
 python get-pip2.py
 rm get-pip.py get-pip2.py
 #my_travis_retry pip install --upgrade pip
-#my_travis_retry pip3 install --upgrade pip
+my_travis_retry pip3 install --upgrade pip
+my_travis_retry pip3 install numpy \
+pyzbar \
+yolov8 \
+math \
+tensorflow
+
 
 echo_stamp "Make sure both pip and pip3 are installed"
 pip --version
