@@ -132,7 +132,6 @@ my_travis_retry pip3 install --upgrade pip
 my_travis_retry pip3 install numpy \
 pyzbar \
 yolov8 \
-tensorflow \
 python-math
 
 
