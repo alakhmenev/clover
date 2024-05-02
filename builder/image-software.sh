@@ -129,10 +129,7 @@ python get-pip2.py
 rm get-pip.py get-pip2.py
 #my_travis_retry pip install --upgrade pip
 my_travis_retry pip3 install --upgrade pip
-my_travis_retry pip3 install numpy \
-pyzbar \
-yolov8 \
-python-math
+my_travis_retry pip3 install yolov8
 
 
 echo_stamp "Make sure both pip and pip3 are installed"
