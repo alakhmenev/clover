@@ -139,7 +139,7 @@ echo_stamp "TKUIK installing"
 #my_travis_retry pip3 install ez_setup
 #my_travis_retry sudo apt-get install python3.8 -y
 #my_travis_retry pip3 install ultralytics==8.0.20
-my_travis_retry pip3 install tensorflow==2.5.2 -y
+my_travis_retry pip3 install tensorflow==2.5.2
 
 echo_stamp "Make sure both pip and pip3 are installed"
 pip --version
